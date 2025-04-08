@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+#gameContainer {
+  width: 400px;
+  height: 600px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #fff;
+}
+
+.road {
+  position: absolute;
+  width: 100%;
+  height: 1650px;
+  background: url("/assets/images/Road\ image2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+#road1 {
+  top: 0;
+}
+
+#road2 {
+  top: -600px;
+}
+
+#startScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.gameTitle {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.gameSubtitle {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#startButton {
+  padding: 12px 40px;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#startButton:hover {
+  background-color: #45a049;
+}
+
+#playerCar,
+#systemCar {
+  width: 70px;
+  height: 102px;
+  position: absolute;
+  background-size: cover;
+}
+
+#playerCar {
+  top: 500px;
+  left: 175px;
+  background-image: url("/assets/images/My\ car\ image.png");
+  z-index: 2;
+}
+
+#systemCar {
+  top: -120px;
+  left: 175px;
+  background-image: url("/assets/images/Car\ image.png");
+  z-index: 1;
+}
+
+#scoreBoard,
+#levelDisplay {
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+#scoreBoard {
+  top: 10px;
+  left: 10px;
+}
+
+#levelDisplay {
+  top: 10px;
+  right: 10px;
+}
