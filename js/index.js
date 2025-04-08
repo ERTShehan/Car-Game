@@ -11,11 +11,11 @@ function PlayerCar(selector) {
   this.$el = $(selector);
   this.moveLeft = () => {
     let pos = this.$el.position().left;
-    if (pos > 0) this.$el.css("left", pos - 10);
+    if (pos > 0) this.$el.css("left", pos - 20);
   };
   this.moveRight = () => {
     let pos = this.$el.position().left;
-    if (pos < 350) this.$el.css("left", pos + 10);
+    if (pos < 350) this.$el.css("left", pos + 20);
   };
   this.moveUp = () => {
     let pos = this.$el.position().top;
