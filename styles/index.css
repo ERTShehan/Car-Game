@@ -3,6 +3,10 @@ body {
   padding: 0;
   background-color: #333;
   font-family: sans-serif;
+  background: url("/assets/images/Background\ road\ image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #gameContainer {
@@ -17,7 +21,7 @@ body {
 .road {
   position: absolute;
   width: 100%;
-  height: 1650px;
+  height: 1700px;
   background: url("/assets/images/Road\ image2.png");
   background-size: cover;
   background-position: center;
@@ -75,8 +79,8 @@ body {
 
 #playerCar,
 #systemCar {
-  width: 70px;
-  height: 102px;
+  width: 55px;
+  height: 100px;
   position: absolute;
   background-size: cover;
 }
@@ -85,6 +89,8 @@ body {
   top: 500px;
   left: 175px;
   background-image: url("/assets/images/My\ car\ image.png");
+  background-size: cover;
+  background-position: center;
   z-index: 2;
 }
 
@@ -92,6 +98,8 @@ body {
   top: -120px;
   left: 175px;
   background-image: url("/assets/images/Car\ image.png");
+  background-size: cover;
+  background-position: center;
   z-index: 1;
 }
 
