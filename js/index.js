@@ -65,6 +65,8 @@ $(function () {
   let player = new PlayerCar("#playerCar");
   let systemCar = new SystemCar("#systemCar");
 
+  let crashSound = new Audio('/assets/sounds/oversound.mp3');
+
   $("#startButton").click(function () {
     $("#startScreen").hide();
     game.isRunning = true;
@@ -131,8 +133,11 @@ $(function () {
     if (checkCollision()) {
       game.isRunning = false;
       clearInterval(game.scoreInterval);
-      alert("Game Over! Final Score: " + game.score);
-      location.reload();
+      crashSound.play();
+      setTimeout(function() {
+        alert("Game Over! Final Score: " + game.score);
+        location.reload();
+      }, 500);
     } else {
       requestAnimationFrame(gameLoop);
     }
